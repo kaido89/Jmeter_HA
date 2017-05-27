@@ -9,6 +9,6 @@ It was originally designed for testing Web Applications but has since expanded t
 <li>Master PC (In my case: Centos)<br></li>
 <li>Two Slaves PC (In my case: Centos)<br></li>
 <li>Apache Jmeter (In my case: Jmeter 3.2v)<br></li>
-<li>Gitlab Repositories.<br></li>
+<li>Gitlab Repositories<br></li>
 <li>Jenkins<br></li>
 </ul>
