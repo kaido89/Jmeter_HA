@@ -16,39 +16,8 @@ It was originally designed for testing Web Applications but has since expanded t
 
 <h4>Instalation Steps:</h4>
 <ol>
-<li>1-Installation of Jenkins on all</li>
+<li>Installation of Jenkins on all PCS</li>
+    <ol>
+    <li> <a href="https://jenkins.io/download/">Download Jenkins (In my case it was jenkins-2.7.4-1.1.noarch.rpm)</a></li>
+    </ol>
 </ol>
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #911123;
-}
-</style>
-</head>
-<body>
-
-<ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
