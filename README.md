@@ -5,5 +5,5 @@ So in the <b>I</b>nformation <b>T</b>echnology world there is a free open source
 Named <b>Apache Jmeter</b>, citing from their website: <br>"<i>100% pure Java application designed to load test functional behavior and measure performance.<br> 
 It was originally designed for testing Web Applications but has since expanded to other test functions.</i>"<br>
 <h3>Initial Requirements:</h3>
-【x】 Master PC (In my case: Centos)<br> 
-【x】 Two Slaves PC (In my case: Centos)<br> 
+1. Master PC (In my case: Centos)<br> 
+2. Two Slaves PC (In my case: Centos)<br> 
