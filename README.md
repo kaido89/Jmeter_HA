@@ -6,9 +6,9 @@ Named <b>Apache Jmeter</b>, citing from their website: <br>"<i>100% pure Java ap
 It was originally designed for testing Web Applications but has since expanded to other test functions.</i>"<br>
 <h3>Initial Requirements:</h3>
 <ul>
-<li>1. Master PC (In my case: Centos)<br></li>
-<li>2. Two Slaves PC (In my case: Centos)<br></li>
-<li>3. Apache Jmeter (In my case: Jmeter 3.2v)<br></li>
-<li>4. Gitlab Repositories.<br></li>
-<li>5. Jenkins<br></li>
+<li>Master PC (In my case: Centos)<br></li>
+<li>Two Slaves PC (In my case: Centos)<br></li>
+<li>Apache Jmeter (In my case: Jmeter 3.2v)<br></li>
+<li>Gitlab Repositories.<br></li>
+<li>Jenkins<br></li>
 </ul>
