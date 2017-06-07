@@ -21,7 +21,9 @@ It was originally designed for testing Web Applications but has since expanded t
     <li> <a href="https://jenkins.io/download/">Download Jenkins</a> (In my case it was jenkins-2.7.4-1.1.noarch.rpm)</li>
     <li> Install on Master</li>
          # sudo rpm -Uvh jenkins-2.7.4-1.1.noarch.rpm 
-    <li> Install on Master</li>
+    <li> Install on Slave 1</li>
+         # sudo rpm -Uvh jenkins-2.7.4-1.1.noarch.rpm 
+    <li> Install on Slave 2</li>
          # sudo rpm -Uvh jenkins-2.7.4-1.1.noarch.rpm 
     </ol>
 
