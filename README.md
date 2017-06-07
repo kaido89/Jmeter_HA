@@ -23,6 +23,6 @@ It was originally designed for testing Web Applications but has since expanded t
 
     </ol>
 
-  ``` Sudo rpm -Uvh jenkins-2.7.4-1.1.noarch.rpm 
-
+  `` Sudo rpm -Uvh jenkins-2.7.4-1.1.noarch.rpm 
+`` 
 </ol>
