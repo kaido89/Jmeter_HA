@@ -20,9 +20,8 @@ It was originally designed for testing Web Applications but has since expanded t
     <ol>
     <li> <a href="https://jenkins.io/download/">Download Jenkins</a> (In my case it was jenkins-2.7.4-1.1.noarch.rpm)</li>
     <li> 1-Install on Master</li>
-
     </ol>
 
-   Sudo rpm -Uvh jenkins-2.7.4-1.1.noarch.rpm 
-`` 
+ ``   Sudo rpm -Uvh jenkins-2.7.4-1.1.noarch.rpm `` 
+
 </ol>
