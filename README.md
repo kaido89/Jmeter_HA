@@ -19,14 +19,18 @@ It was originally designed for testing Web Applications but has since expanded t
 <li>Installation of Jenkins on all PCS</li>
     <ol>
     <li> <a href="https://jenkins.io/download/">Download Jenkins</a> (In my case it was jenkins-2.7.4-1.1.noarch.rpm)</li>
-    <li> Install on Master</li>
-         # sudo rpm -Uvh jenkins-2.7.4-1.1.noarch.rpm 
-    <li> Install on Slave 1</li>
-         # sudo rpm -Uvh jenkins-2.7.4-1.1.noarch.rpm 
-    <li> Install on Slave 2</li>
-         # sudo rpm -Uvh jenkins-2.7.4-1.1.noarch.rpm 
+    <li> Install on Master, Slave 1 and Slave the jenkins</li>
+         # sudo rpm -Uvh jenkins-2.7.4-1.1.noarch.rpm
+         # sudo yum update
+         # sudo systemctl enable jenkins
+         # sudo systemctl start jenkins
     </ol>
-
-   
+<li>Open the Jenkins on the Browser (Chrome/Firefox)</li>
+    <ol>
+    <li>Browser URL:localhost:8080 </li>
+    <li>In terminal copy text</li>
+        # sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+    <li>Paste on the Browser [Appears on Screen Unlock Jenkins] and Continue on.</li>
+    </ol>
 
 </ol>
