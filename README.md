@@ -30,7 +30,11 @@ It was originally designed for testing Web Applications but has since expanded t
     <li>Browser URL:localhost:8080 </li>
     <li>In terminal copy text</li>
         # sudo cat /var/lib/jenkins/secrets/initialAdminPassword
-    <li>Paste on the Browser [Appears on Screen Unlock Jenkins] and Continue on.</li>
+    <li>Paste the previous content on the Browser [Appears on Screen Unlock Jenkins] and Continue on.</li>
+    <li>Click on "Install Suggested Plugins"</li>
+    <li>Wait until the installation is completed</li>
+    <li>Insert data of the users: (In my case: Master, Slave1, Slave2 [respectively for each machine])</li>
+    <li>Click on Start using Jenkins.</li>
     </ol>
 
 </ol>
