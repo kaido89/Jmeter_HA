@@ -21,10 +21,12 @@ It was originally designed for testing Web Applications but has since expanded t
     <li> <a href="https://jenkins.io/download/">Download Jenkins</a> (In my case it was jenkins-2.7.4-1.1.noarch.rpm)</li>
     <li> Install on Master, Slave 1 and Slave the jenkins</li>
     </ol>
-`sh sudo rpm -Uvh jenkins-2.7.4-1.1.noarch.rpm`
-`sh sudo yum update`
-`sh sudo systemctl enable jenkins`
-`sh sudo systemctl start jenkins`
+```
+sh sudo rpm -Uvh jenkins-2.7.4-1.1.noarch.rpm
+sh sudo yum update
+sh sudo systemctl enable jenkins
+sh sudo systemctl start jenkins
+```
     <li>Open the Jenkins on the Browser (Chrome/Firefox)</li>
     <ol>
     <li>Browser URL:localhost:8080 </li>
