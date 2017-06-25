@@ -47,7 +47,7 @@ It was originally designed for testing Web Applications but has since expanded t
 # sudo vi /etc/sysconfig/jenkins
 ```
 
-2-On line 56 change "JENKINS_PORT="8080" to "JENKINS_PORT="8081"<br>
+2-On line 56 change `JENKINS_PORT="8080` to `JENKINS_PORT="8081`<br>
 ```
 # sudo systemctl start jenkins
 ```
