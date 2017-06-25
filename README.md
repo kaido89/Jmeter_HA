@@ -30,7 +30,7 @@ It was originally designed for testing Web Applications but has since expanded t
 --Browser URL:localhost:8080<br>
 --In terminal copy text<br>
 ```
-sh sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+# sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 --Paste the previous content on the Browser [Appears on Screen Unlock Jenkins] and Continue on.</br>
 --Click on the close "x" button, near "Getting Started" text</br>
@@ -52,14 +52,14 @@ sh sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 	<li>Follow Gitlab installation guide on this <a href="https://about.gitlab.com/installation/#centos">Link</a> or the instructions bellow>:</li>
 	<li>Install and configure necessary dependencies</li>
 ```
-		# sudo yum install curl policycoreutils openssh-server openssh-clients
-		# sudo systemctl enable sshd
-		# sudo systemctl start sshd
-		# sudo yum install postfix
-		# sudo systemctl enable postfix
-		# sudo systemctl start postfix
-		# sudo firewall-cmd --permanent --add-service=http
-		# sudo systemctl reload firewalld
+# sudo yum install curl policycoreutils openssh-server openssh-clients
+# sudo systemctl enable sshd
+# sudo systemctl start sshd
+# sudo yum install postfix
+# sudo systemctl enable postfix
+# sudo systemctl start postfix
+# sudo firewall-cmd --permanent --add-service=http
+# sudo systemctl reload firewalld
 ```
 	<li>Add the GitLab package server and install the package:</li>
 		# curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
