@@ -27,8 +27,8 @@ It was originally designed for testing Web Applications but has since expanded t
 # sudo systemctl start jenkins
 ```
 3-Open the Jenkins on the Browser (Chrome/Firefox)<br>
-3a)--One the URL `localhost:8080`<br>
-3b)--In terminal copy text<br>
+3a)--In the URL `localhost:8080`<br>
+3b)--In terminal copy the text<br>
 ```
 # sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
