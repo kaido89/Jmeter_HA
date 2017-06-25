@@ -23,10 +23,11 @@ It was originally designed for testing Web Applications but has since expanded t
     </ol>
 ```
 	  sudo rpm -Uvh jenkins-2.7.4-1.1.noarch.rpm
+```
           sudo yum update
           sudo systemctl enable jenkins
        	  sudo systemctl start jenkins
-```
+
     <li>Open the Jenkins on the Browser (Chrome/Firefox)</li>
     <ol>
     <li>Browser URL:localhost:8080 </li>
