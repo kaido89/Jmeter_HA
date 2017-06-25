@@ -51,8 +51,8 @@ It was originally designed for testing Web Applications but has since expanded t
 ```
 # sudo systemctl start jenkins
 ```
-	<li>Follow Gitlab installation guide on this <a href="https://about.gitlab.com/installation/#centos">Link</a> or the instructions bellow>:</li>
-	<li>Install and configure necessary dependencies</li>
+Follow Gitlab installation guide on this <a href="https://about.gitlab.com/installation/#centos">Link</a> or the instructions bellow>:</br>
+-Install and configure necessary dependencies</br>
 ```
 # sudo yum install curl policycoreutils openssh-server openssh-clients
 # sudo systemctl enable sshd
@@ -63,13 +63,16 @@ It was originally designed for testing Web Applications but has since expanded t
 # sudo firewall-cmd --permanent --add-service=http
 # sudo systemctl reload firewalld
 ```
-	<li>Add the GitLab package server and install the package:</li>
-		# curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
-		# sudo yum install gitlab-ce
-	<li>Configure and start GitLab</li>
-		# sudo gitlab-ctl reconfigure
-	<li>Open the Browser on http:localhost</li>
-	<li>Change the Password</li>
-	<li>Login with user "root" and the "new Password"</li>
-	</ol>
-</ol>
+-Add the GitLab package server and install the package:</br>
+```
+# curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
+# sudo yum install gitlab-ce
+```
+-Configure and start GitLab</br>
+```
+# sudo gitlab-ctl reconfigure
+```
+-Open the Browser on http:localhost</br>
+-Change the Password</br>
+-Login with user "root" and the "new Password"</br>
+
