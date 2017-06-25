@@ -32,27 +32,27 @@ It was originally designed for testing Web Applications but has since expanded t
 ```
 # sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
-3c)--Paste the previous content on the Browser [Appears on Screen Unlock Jenkins] and Continue on.</br>
-3d)--Click on the close "x" button, near "Getting Started" text</br>
-3e)--Click on Start using Jenkins</br>
-3f)--Select admin text on top right corner</br>
-3g)--Click on configure left menu</br>
-3h)--Change "Full Name" and "Password" and Click Save</br>
+3c)--Paste the previous content on the Browser [Appears on Screen Unlock Jenkins] and Continue on.<br>
+3d)--Click on the close "x" button, near "Getting Started" text<br>
+3e)--Click on Start using Jenkins<br>
+3f)--Select admin text on top right corner<br>
+3g)--Click on configure left menu<br>
+3h)--Change "Full Name" and "Password" and Click Save<br>
 
-<h5>Installation of Gitlab on one of the PCS (In my case: on Slave 2 Centos)</br></h5>
-1-Before this change the jenkins port 8080 to 8081 (In my case: on Slave 2 Centos)</br>
+<h5>Installation of Gitlab on one of the PCS (In my case: on Slave 2 Centos)<br></h5>
+1-Before this change the jenkins port 8080 to 8081 (In my case: on Slave 2 Centos)<br>
 
 ```
 # sudo systemctl stop jenkins
 # sudo vi /etc/sysconfig/jenkins
 ```
 
-2-On line 56 change "JENKINS_PORT="8080" to "JENKINS_PORT="8081"</br>
+2-On line 56 change "JENKINS_PORT="8080" to "JENKINS_PORT="8081"<br>
 ```
 # sudo systemctl start jenkins
 ```
 3-Follow Gitlab installation guide on this <a href="https://about.gitlab.com/installation/#centos">Link</a> or the instructions bellow:</br>
-3a)--Install and configure necessary dependencies</br>
+3a)--Install and configure necessary dependencies<br>
 
 ```
 # sudo yum install curl policycoreutils openssh-server openssh-clients
@@ -65,20 +65,20 @@ It was originally designed for testing Web Applications but has since expanded t
 # sudo systemctl reload firewalld
 ```
 
-3b)--Add the GitLab package server and install the package:</br>
+3b)--Add the GitLab package server and install the package:<br>
 
 ```
 # curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
 # sudo yum install gitlab-ce
 ```
 
-3c)--Configure and start GitLab</br>
+3c)--Configure and start GitLab<br>
 
 ```
 # sudo gitlab-ctl reconfigure
 ```
 
-3d)--Open the Browser on `http:localhost`</br>
-3e)--Change the Password</br>
-3f)--Login with user "root" and the "new Password"</br>
+3d)--Open the Browser on `http:localhost`<br>
+3e)--Change the Password<br>
+3f)--Login with user "root" and the "new Password"<br>
 
