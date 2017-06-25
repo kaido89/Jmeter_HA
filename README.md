@@ -17,37 +17,41 @@ It was originally designed for testing Web Applications but has since expanded t
 <h4>Instalation Steps:</h4>
 
 <h5>Installation of Jenkins on all PCS</h5>
-<a href="https://jenkins.io/download/">Download Jenkins</a> (In my case it was jenkins-2.7.4-1.1.noarch.rpm)
-Install on Master, Slave 1 and Slave the jenkins
+-<a href="https://jenkins.io/download/">Download Jenkins</a> (In my case it was jenkins-2.7.4-1.1.noarch.rpm)<br>
+-Install on Master, Slave 1 and Slave the jenkins<br>
     
 ```
-sh sudo rpm -Uvh jenkins-2.7.4-1.1.noarch.rpm
-sh sudo yum update
-sh sudo systemctl enable jenkins
-sh sudo systemctl start jenkins
+# sudo rpm -Uvh jenkins-2.7.4-1.1.noarch.rpm
+# sudo yum update
+# sudo systemctl enable jenkins
+# sudo systemctl start jenkins
 ```
-<ol>
-    <li>Open the Jenkins on the Browser (Chrome/Firefox)</li>
-    <ol>
-    <li>Browser URL:localhost:8080 </li>
-    <li>In terminal copy text</li>
-        # sudo cat /var/lib/jenkins/secrets/initialAdminPassword
-    <li>Paste the previous content on the Browser [Appears on Screen Unlock Jenkins] and Continue on.</li>
-    <li>Click on the close "x" button, near "Getting Started" text</li>
-    <li>Click on Start using Jenkins.</li>
-	<li>Select admin text on top right corner</li>
-	<li>Click on configure left menu</li>
-	<li>Change "Full Name" and "Password" and Click Save</li>
-    </ol>
-<li>Installation of Gitlab on one of the PCS (In my case: on Slave 2 Centos)</li>
-	<ol>
-	<li>Before this change the jenkins port 8080 to 8081(In my case: on Slave 2 Centos)</li>
-		# sudo systemctl stop jenkins
-		# sudo vi /etc/sysconfig/jenkins
-	<li>On line 56 change "JENKINS_PORT="8080" to "JENKINS_PORT="8081"</li>
-		# sudo systemctl start jenkins
+-Open the Jenkins on the Browser (Chrome/Firefox)<br>
+--Browser URL:localhost:8080<br>
+--In terminal copy text<br>
+```
+sh sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+```
+--Paste the previous content on the Browser [Appears on Screen Unlock Jenkins] and Continue on.</br>
+--Click on the close "x" button, near "Getting Started" text</br>
+--Click on Start using Jenkins</br>
+--Select admin text on top right corner</br>
+--Click on configure left menu</br>
+--Change "Full Name" and "Password" and Click Save</br>
+
+<h5>Installation of Gitlab on one of the PCS (In my case: on Slave 2 Centos)</br></h5>
+-Before this change the jenkins port 8080 to 8081(In my case: on Slave 2 Centos)</br>
+```
+# sudo systemctl stop jenkins
+# sudo vi /etc/sysconfig/jenkins
+```
+-On line 56 change "JENKINS_PORT="8080" to "JENKINS_PORT="8081"</li>
+```
+# sudo systemctl start jenkins
+```
 	<li>Follow Gitlab installation guide on this <a href="https://about.gitlab.com/installation/#centos">Link</a> or the instructions bellow>:</li>
 	<li>Install and configure necessary dependencies</li>
+```
 		# sudo yum install curl policycoreutils openssh-server openssh-clients
 		# sudo systemctl enable sshd
 		# sudo systemctl start sshd
@@ -56,6 +60,7 @@ sh sudo systemctl start jenkins
 		# sudo systemctl start postfix
 		# sudo firewall-cmd --permanent --add-service=http
 		# sudo systemctl reload firewalld
+```
 	<li>Add the GitLab package server and install the package:</li>
 		# curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
 		# sudo yum install gitlab-ce
