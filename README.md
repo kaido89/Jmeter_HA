@@ -17,9 +17,8 @@ It was originally designed for testing Web Applications but has since expanded t
 <h4>Instalation Steps:</h4>
 
 <h5>Installation of Jenkins on all PCS</h5>
-    
-    <li> <a href="https://jenkins.io/download/">Download Jenkins</a> (In my case it was jenkins-2.7.4-1.1.noarch.rpm)</li>
-    <li> Install on Master, Slave 1 and Slave the jenkins</li>
+<a href="https://jenkins.io/download/">Download Jenkins</a> (In my case it was jenkins-2.7.4-1.1.noarch.rpm)
+Install on Master, Slave 1 and Slave the jenkins
     
 ```
 sh sudo rpm -Uvh jenkins-2.7.4-1.1.noarch.rpm
