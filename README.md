@@ -8,7 +8,8 @@ It was originally designed for testing Web Applications but has since expanded t
 sh sudo rpm -Uvh jenkins-2.7.4-1.1.noarch.rpm
 sh sudo yum update
 sh sudo systemctl enable jenkins
-sh su
+sh sudo systemctl start jenkins
+```
 <h3>Initial Requirements:</h3>
 <ul>
 <li>Master PC (In my case: Centos)<br></li>
@@ -26,7 +27,7 @@ sh su
     <li> Install on Master, Slave 1 and Slave the jenkins</li>
     </ol>
 do systemctl start jenkins
-```
+
     <li>Open the Jenkins on the Browser (Chrome/Firefox)</li>
     <ol>
     <li>Browser URL:localhost:8080 </li>
