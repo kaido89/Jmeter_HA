@@ -51,7 +51,7 @@ It was originally designed for testing Web Applications but has since expanded t
 ```
 # sudo systemctl start jenkins
 ```
-Follow Gitlab installation guide on this <a href="https://about.gitlab.com/installation/#centos">Link</a> or the instructions bellow>:</br>
+Follow Gitlab installation guide on this <a href="https://about.gitlab.com/installation/#centos">Link</a> or the instructions bellow:</br>
 -Install and configure necessary dependencies</br>
 ```
 # sudo yum install curl policycoreutils openssh-server openssh-clients
@@ -72,7 +72,7 @@ Follow Gitlab installation guide on this <a href="https://about.gitlab.com/insta
 ```
 # sudo gitlab-ctl reconfigure
 ```
--Open the Browser on http:localhost</br>
+-Open the Browser on `http:localhost`</br>
 -Change the Password</br>
 -Login with user "root" and the "new Password"</br>
 
