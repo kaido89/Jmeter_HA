@@ -31,10 +31,36 @@ It was originally designed for testing Web Applications but has since expanded t
     <li>In terminal copy text</li>
         # sudo cat /var/lib/jenkins/secrets/initialAdminPassword
     <li>Paste the previous content on the Browser [Appears on Screen Unlock Jenkins] and Continue on.</li>
-    <li>Click on "Install Suggested Plugins"</li>
-    <li>Wait until the installation is completed</li>
-    <li>Insert data of the users: (In my case: Master, Slave1, Slave2 [respectively for each machine])</li>
+    <li>Click on the close "x" button, near "Getting Started" text</li>
     <li>Click on Start using Jenkins.</li>
+	<li>Select admin text on top right corner</li>
+	<li>Click on configure left menu</li>
+	<li>Change "Full Name" and "Password" and Click Save</li>
     </ol>
-
+<li>Installation of Gitlab on one of the PCS (In my case: on Slave 2 Centos)</li>
+	<ol>
+	<li>Before this change the jenkins port 8080 to 8081(In my case: on Slave 2 Centos)</li>
+		# sudo systemctl stop jenkins
+		# sudo vi /etc/sysconfig/jenkins
+	<li>On line 56 change "JENKINS_PORT="8080" to "JENKINS_PORT="8081"</li>
+		# sudo systemctl start jenkins
+	<li>Follow Gitlab installation guide on this <a href="https://about.gitlab.com/installation/#centos">Link</a> or the instructions bellow>:</li>
+	<li>Install and configure necessary dependencies</li>
+		# sudo yum install curl policycoreutils openssh-server openssh-clients
+		# sudo systemctl enable sshd
+		# sudo systemctl start sshd
+		# sudo yum install postfix
+		# sudo systemctl enable postfix
+		# sudo systemctl start postfix
+		# sudo firewall-cmd --permanent --add-service=http
+		# sudo systemctl reload firewalld
+	<li>Add the GitLab package server and install the package:</li>
+		# curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
+		# sudo yum install gitlab-ce
+	<li>Configure and start GitLab</li>
+		# sudo gitlab-ctl reconfigure
+	<li>Open the Browser on http:localhost</li>
+	<li>Change the Password</li>
+	<li>Login with user "root" and the "new Password"</li>
+	</ol>
 </ol>
