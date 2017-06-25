@@ -41,11 +41,13 @@ It was originally designed for testing Web Applications but has since expanded t
 
 <h5>Installation of Gitlab on one of the PCS (In my case: on Slave 2 Centos)</br></h5>
 1-Before this change the jenkins port 8080 to 8081 (In my case: on Slave 2 Centos)</br>
+
 ```
 # sudo systemctl stop jenkins
 # sudo vi /etc/sysconfig/jenkins
 ```
-2-On line 56 change "JENKINS_PORT="8080" to "JENKINS_PORT="8081"</li>
+
+2-On line 56 change "JENKINS_PORT="8080" to "JENKINS_PORT="8081"</br>
 ```
 # sudo systemctl start jenkins
 ```
