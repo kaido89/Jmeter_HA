@@ -16,6 +16,6 @@ It was originally designed for testing Web Applications but has since expanded t
 
 <h4>Instalation Steps:</h4>
 
-<h5>Installation of Jenkins on all PCS: <a href="https://github.com/kaido89/Jmeter-HA/wiki/Installation-Jenkins">Link</a></h5>
+<h5>1-Installation of Jenkins on all PCS: <a href="https://github.com/kaido89/Jmeter-HA/wiki/Installation-Jenkins">Link</a></h5>
 
-<h5>Installation of Gitlab on one of the PCS (In my case: on Slave 2 Centos): <a href="https://github.com/kaido89/Jmeter-HA/wiki/Installation-Gitlab">Link</a><br></h5>
+<h5>2-Installation of Gitlab on one of the PCS (In my case: on Slave 2 Centos): <a href="https://github.com/kaido89/Jmeter-HA/wiki/Installation-Gitlab">Link</a><br></h5>
