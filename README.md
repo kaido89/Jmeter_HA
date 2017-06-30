@@ -19,6 +19,4 @@ It was originally designed for testing Web Applications but has since expanded t
 <h5>1-Installation of Jenkins on all PCS: <a href="https://github.com/kaido89/Jmeter-HA/wiki/Installation-Jenkins">Link</a></h5>
 
 <h5>2-Installation of Gitlab on one of the PCS (In my case: on Slave 2 Centos): <a href="https://github.com/kaido89/Jmeter-HA/wiki/Installation-Gitlab">Link</a><br></h5>
-<h5>3-One the Master Machine Download Apache-Jmeterv3.2 Zip file: <a href="http://jmeter.apache.org/download_jmeter.cgi">Link</a></h5>
-<h5>4-Transfer Apache-Jmeter ZIP to the slaves</h5>
-<h5>5-Unzip Apache-Jmeter on all machines</h5>
+<h5>3-Installation of Jmeter on all PCS <a href="https://github.com/kaido89/Jmeter-HA/wiki/4.-Install-Jmeter">Link</a></h5>
