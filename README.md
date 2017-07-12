@@ -20,3 +20,4 @@ It was originally designed for testing Web Applications but has since expanded t
 
 <h5>2-Installation of Gitlab on one of the PCS (In my case: on Slave 2 Centos): <a href="https://github.com/kaido89/Jmeter-HA/wiki/Installation-Gitlab">Link</a><br></h5>
 <h5>3-Installation of Jmeter on all PCS <a href="https://github.com/kaido89/Jmeter-HA/wiki/4.-Install-Jmeter">Link</a></h5>
+<h5>4-Configure the Network <a href="https://github.com/kaido89/Jmeter-HA/wiki/5.-Configure-the-Network">Link</a></h5>
